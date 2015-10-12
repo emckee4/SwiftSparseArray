@@ -6,14 +6,37 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		C0590BF71BCAF44C00ECC361 /* SparseArray */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C0590BF81BCAF44C00ECC361 /* Build configuration list for PBXAggregateTarget "SparseArray" */;
+			buildPhases = (
+				C0590BFB1BCAF49000ECC361 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = SparseArray;
+			productName = SparseArray;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		C0590BE51BCA06F100ECC361 /* SwiftSparseArray.h in Headers */ = {isa = PBXBuildFile; fileRef = C0590BE41BCA06F100ECC361 /* SwiftSparseArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0590BED1BCA078300ECC361 /* SparseArrayProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590BEC1BCA078300ECC361 /* SparseArrayProtocol+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		C0590BEF1BCA07A600ECC361 /* SparseArrayImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590BEE1BCA07A600ECC361 /* SparseArrayImplementations.swift */; settings = {ASSET_TAGS = (); }; };
+		C0590BF11BCA07C600ECC361 /* OtherProtocolsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590BF01BCA07C600ECC361 /* OtherProtocolsAndExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		C0590BF31BCA082B00ECC361 /* SparseArrayGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0590BF21BCA082B00ECC361 /* SparseArrayGenerator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C0590BE11BCA06F100ECC361 /* SwiftSparseArray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSparseArray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0590BE41BCA06F100ECC361 /* SwiftSparseArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftSparseArray.h; sourceTree = "<group>"; };
 		C0590BE61BCA06F100ECC361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0590BEC1BCA078300ECC361 /* SparseArrayProtocol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SparseArrayProtocol+Extension.swift"; sourceTree = "<group>"; };
+		C0590BEE1BCA07A600ECC361 /* SparseArrayImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseArrayImplementations.swift; sourceTree = "<group>"; };
+		C0590BF01BCA07C600ECC361 /* OtherProtocolsAndExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherProtocolsAndExtensions.swift; sourceTree = "<group>"; };
+		C0590BF21BCA082B00ECC361 /* SparseArrayGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseArrayGenerator.swift; sourceTree = "<group>"; };
+		C0590C0E1BCC5A4500ECC361 /* SwiftSparseArray.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftSparseArray.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				C0590BE31BCA06F100ECC361 /* SwiftSparseArray */,
+				C0590C0D1BCC5A1D00ECC361 /* Fat Binary */,
 				C0590BE21BCA06F100ECC361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,8 +72,20 @@
 			children = (
 				C0590BE41BCA06F100ECC361 /* SwiftSparseArray.h */,
 				C0590BE61BCA06F100ECC361 /* Info.plist */,
+				C0590BEC1BCA078300ECC361 /* SparseArrayProtocol+Extension.swift */,
+				C0590BF21BCA082B00ECC361 /* SparseArrayGenerator.swift */,
+				C0590BEE1BCA07A600ECC361 /* SparseArrayImplementations.swift */,
+				C0590BF01BCA07C600ECC361 /* OtherProtocolsAndExtensions.swift */,
 			);
 			path = SwiftSparseArray;
+			sourceTree = "<group>";
+		};
+		C0590C0D1BCC5A1D00ECC361 /* Fat Binary */ = {
+			isa = PBXGroup;
+			children = (
+				C0590C0E1BCC5A4500ECC361 /* SwiftSparseArray.framework */,
+			);
+			name = "Fat Binary";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,10 +126,14 @@
 		C0590BD81BCA06F000ECC361 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = McKeeMaKer;
 				TargetAttributes = {
 					C0590BE01BCA06F100ECC361 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C0590BF71BCAF44C00ECC361 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -111,6 +151,7 @@
 			projectRoot = "";
 			targets = (
 				C0590BE01BCA06F100ECC361 /* SwiftSparseArray */,
+				C0590BF71BCAF44C00ECC361 /* SparseArray */,
 			);
 		};
 /* End PBXProject section */
@@ -125,11 +166,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C0590BFB1BCAF49000ECC361 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"SwiftSparseArray\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${SRCROOT}/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${SRCROOT}/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${SRCROOT}/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${SRCROOT}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${SRCROOT}/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0590BDC1BCA06F100ECC361 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0590BEF1BCA07A600ECC361 /* SparseArrayImplementations.swift in Sources */,
+				C0590BF31BCA082B00ECC361 /* SparseArrayGenerator.swift in Sources */,
+				C0590BED1BCA078300ECC361 /* SparseArrayProtocol+Extension.swift in Sources */,
+				C0590BF11BCA07C600ECC361 /* OtherProtocolsAndExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,32 +289,61 @@
 		C0590BEA1BCA06F100ECC361 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftSparseArray/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.McKeeMaKer.SwiftSparseArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C0590BEB1BCA06F100ECC361 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SwiftSparseArray/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.McKeeMaKer.SwiftSparseArray;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C0590BF91BCAF44C00ECC361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C0590BFA1BCAF44C00ECC361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -274,6 +364,14 @@
 			buildConfigurations = (
 				C0590BEA1BCA06F100ECC361 /* Debug */,
 				C0590BEB1BCA06F100ECC361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0590BF81BCAF44C00ECC361 /* Build configuration list for PBXAggregateTarget "SparseArray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0590BF91BCAF44C00ECC361 /* Debug */,
+				C0590BFA1BCAF44C00ECC361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
